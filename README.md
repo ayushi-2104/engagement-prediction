@@ -23,7 +23,7 @@ Matplotlib - For visualization
 
 📓 Notebook Preview
 You can try it out in Colab:
-https://colab.research.google.com/github/SohamAmberkar/dip/blob/main/docs/tutorials/python/Predict%20engagement%20and%20emotions%20on%20video.ipynb
+https://colab.research.google.com/github/ayushi-2104/engagement-prediction/blob/main/engagement_prediction.ipynb
 
 📂 Dataset Used
 The experiments in the paper and notebook are validated on the following datasets:
