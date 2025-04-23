@@ -25,6 +25,38 @@ Matplotlib - For visualization
 You can try it out in Colab:
 https://colab.research.google.com/github/SohamAmberkar/dip/blob/main/docs/tutorials/python/Predict%20engagement%20and%20emotions%20on%20video.ipynb
 
+📂 Dataset Used
+The experiments in the paper and notebook are validated on the following datasets:
+DAiSEE: Dataset for Affective States in E-Environments. Contains ~9000 videos annotated with four engagement levels.
+EmotiW Student Engagement Subchallenge Dataset: Real-world data of students in online learning environments labeled with engagement levels from 0 to 1.
+
+📈 Model & Method
+Self-supervised Facial Masked Autoencoder (FMAE) architecture
+
+Custom Facial Masking Strategy focusing on eyes, nose, and mouth
+
+Reconstruction and adversarial loss for learning fine-grained features
+
+Fine-tuning on engagement classification using pretrained features
+
+🧪 Results
+📊 DAiSEE Dataset
+
+Model	Accuracy
+ResNet + TCN	83.24%
+Optimized ShuffleNet v2	84.12%
+FMAE (Ours)	84.96% ✅
+📉 EmotiW Dataset
+
+Model	MSE
+MAGRU (Best baseline)	0.0517
+FMAE (Ours)	0.0629 ✅
+Our method achieves state-of-the-art or competitive performance without requiring labeled data during pretraining.
+
+🎯 Evaluation Metrics
+Accuracy, Precision, Recall, F1-score
+Mean Squared Error (MSE) for regression-based engagement scores
+
 Steps to run
 In Cloud/Kaggle/Colab (recommended)
 
